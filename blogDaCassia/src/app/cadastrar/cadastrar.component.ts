@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserLogin } from '../model/UserLogin';
 
 @Component({
   selector: 'app-cadastrar',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastrarComponent implements OnInit {
 
+  userLogin: UserLogin = new UserLogin
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    window.scroll(0, 0)
   }
 
 }

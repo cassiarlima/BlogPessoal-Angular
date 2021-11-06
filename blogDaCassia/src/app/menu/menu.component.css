@@ -2,6 +2,11 @@
     font-size: 16pt;
 }
 
+.nav {
+    background-color: #6f42c1;
+    width: 100% !important;
+}
+
 a{
     cursor: pointer;
 }

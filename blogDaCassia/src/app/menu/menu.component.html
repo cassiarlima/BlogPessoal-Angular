@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+<nav class="navbar navbar-expand-lg navbar-light nav">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -7,11 +7,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto d-flex justify align-items-center">
             <li class="nav-item active">
-                <a href="#"><img src="https://i.imgur.com/G5UY2YA.png" title="source: imgur.com" height="50px"
+                <a href="#"><img src="{{foto}}" title="source: imgur.com" height="50px"
                         width="50px" class="img-fluid rounded-circle" /></a>
             </li>
             <li class="nav-item pl-3">
-                <p class="m-0 font-weight-bold text-white fs-16">Nome do usuário</p>
+                <p class="m-0 font-weight-bold text-white fs-16">Olá, {{nome}}</p>
             </li>
 
             <li class="nav-item pl-3">
@@ -25,7 +25,7 @@
         
         <ul class="navbar-nav ml-auto d-flex justify align-items-center">
             <li class="nav-item pl-3">
-                <a class="m-0 font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                <a (click)='sair()' class="m-0 font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
             </li>
         </ul>
 

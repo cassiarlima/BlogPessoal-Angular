@@ -71,6 +71,9 @@
                 <small class="text-muted mb-3">Tema: {{item.tema.descricao}}</small>
                 <p class="card-text">{{item.texto}}</p>
                 
+                <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-3" href="">Editar</a>
+                <a [routerLink]="['/postagem-delete', item.id]" href="text-danger">Apagar</a>
+
               </div>
             </div>
 
